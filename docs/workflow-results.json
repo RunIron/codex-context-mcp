@@ -1,0 +1,16 @@
+{
+  "scope": "Four real Codex runs on one synthetic six-file lookup task; full-read versus selective retrieval using the same MCP. Not a native-search comparison or a general savings guarantee.",
+  "codexCli": "0.159.3",
+  "model": "CLI default, not pinned",
+  "order": "ABBA",
+  "runs": [
+    {"mode":"full_read","input_tokens":111187,"cached_input_tokens":92288,"output_tokens":364,"reasoning_output_tokens":22,"inputPlusOutput":111551,"toolCalls":9,"failedCalls":0,"evidenceVerified":true,"seconds":23.76},
+    {"mode":"selective","input_tokens":68289,"cached_input_tokens":62848,"output_tokens":242,"reasoning_output_tokens":0,"inputPlusOutput":68531,"toolCalls":3,"failedCalls":0,"evidenceVerified":true,"seconds":16.4},
+    {"mode":"selective","input_tokens":68276,"cached_input_tokens":58112,"output_tokens":292,"reasoning_output_tokens":0,"inputPlusOutput":68568,"toolCalls":3,"failedCalls":0,"evidenceVerified":true,"seconds":16.98},
+    {"mode":"full_read","input_tokens":105008,"cached_input_tokens":88960,"output_tokens":341,"reasoning_output_tokens":13,"inputPlusOutput":105349,"toolCalls":8,"failedCalls":0,"evidenceVerified":true,"seconds":22.03}
+  ],
+  "meanFullReadInputPlusOutput":108450,
+  "meanSelectiveInputPlusOutput":68549.5,
+  "reductionPercent":36.791609036422315,
+  "billingCaveat":"Cached input is included in input; reasoning output is not added again to output. This is reported token usage, not dollar cost. Cache state was not controlled."
+}

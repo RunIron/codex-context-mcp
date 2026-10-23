@@ -1,0 +1,44 @@
+{
+  "name": "codex-context-mcp",
+  "version": "0.1.0",
+  "description": "Bounded, read-only local context tools for Codex over MCP stdio",
+  "type": "module",
+  "license": "MIT",
+  "author": "RunIron",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "codex-context-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-TW.md",
+    "SECURITY.md",
+    "docs",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "tsx --test test/*.test.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "format": "prettier --write src test scripts package.json tsconfig.json",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "ignore": "^7.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "@types/node": "^22.0.0",
+    "js-tiktoken": "^1.0.0",
+    "prettier": "3.6.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
