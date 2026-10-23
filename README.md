@@ -72,4 +72,4 @@ This is a deliberately selective, synthetic **payload-only** comparison. It excl
 
 Official TypeScript MCP SDK v2 split packages: server/client 2.3.1, pinned with lockfile. The implementation uses supported `McpServer.registerTool`, Zod object schemas, `StdioServerTransport`, and SDK client subprocess tests. Reference: https://ts.sdk.modelcontextprotocol.io/v2/servers/tools and https://ts.sdk.modelcontextprotocol.io/v2/api/%40modelcontextprotocol/server/server/mcp.html . The direct transport path is intentionally used rather than the newer factory convenience API; real Codex compatibility is a separate integration gate.
 
-CI config covers Linux/Windows × Node 22/24. Local results do not imply CI has run. `npm run format` formats source/tests/scripts. MIT © RunIron. Traditional Chinese: [README.zh-TW.md](README.zh-TW.md).
+CI covers Linux/Windows × Node 22/24; all four initial validation jobs passed. See [validation evidence](docs/validation.md) and [real Codex workflow results](docs/codex-integration.md), including limitations. `npm run format` formats source/tests/scripts. MIT © RunIron. Traditional Chinese: [README.zh-TW.md](README.zh-TW.md).

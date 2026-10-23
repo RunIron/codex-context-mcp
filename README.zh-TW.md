@@ -67,4 +67,4 @@ customer-export.csv
 
 ## 開發
 
-採官方 MCP TypeScript SDK v2 的 server/client 2.3.1，含 lockfile、實際 stdio 子程序協定測試、套件封裝／安裝 smoke。CI 設定涵蓋 Windows/Linux × Node 22/24；有設定不代表已在雲端執行。MIT © RunIron。完整英文規格見 [README.md](README.md)。
+採官方 MCP TypeScript SDK v2 的 server/client 2.3.1，含 lockfile、實際 stdio 子程序協定測試、套件封裝／安裝 smoke。Windows/Linux × Node 22/24 的四組 CI 已實際通過，包含各平台安全回歸測試。驗證與限制見 [紀錄](docs/validation.md)；[真實 Codex 對照](docs/codex-integration.md) 為單一合成查找案例，不保證一般任務的節省比例。MIT © RunIron。完整英文規格見 [README.md](README.md)。
